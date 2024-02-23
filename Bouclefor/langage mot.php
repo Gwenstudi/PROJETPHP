@@ -10,8 +10,8 @@ echo $chaine[0],"\n";//affiche c (1ere char de la chaine)
 var_dump (chr(99));"\n";//affiche le caractere correspondant a 99 dans la table ascii
 var_dump (chr(99),chr(104),chr(111),chr(117),chr(120)); //affiche les caracteres correspondant a 99,104,111,117,120 dans la table ascii
 echo chr(99).chr(104).chr(111).chr(117).chr(120);//
-echo "\"bon"."jour\"   ";//affiche "bonjour" avec guillemets
-var_dump ("bon"."jour");//concatenation donne la chaine"bonjour"
+echo "\"bon"."jour\"";//affiche "bonjour" en un mot avec guillemets
+var_dump ("bon"."jour");//concatenation donne la chaine "bonjour"
 var_dump (intval("9890"));//change chaine de char en entier 9890
 var_dump (strval(9890));//change entier en chaine de caracteres (string..."9890")
 echo ord('c'),ord('h'),ord('*'),ord('µ'),ord('x'),"\n";// affiche 991111215120
@@ -23,3 +23,8 @@ echo lcfirst("Contour"),"\n";//affiche contour 1ere lettre en minuscule
 $decoupe = explode(" ","bonjour tout le monde chante");"\n";//decoupe la chaine en tableau
 echo $decoupe[0],"\n";//affiche bonjour
 echo $decoupe[4],"\n";//affiche chante
+//  "\n"; permet d'aller a la ligne
+echo strlen("bonjour"),"\n";//string lenght  affiche 7
+echo strlen("bonjour tout le monde chante"),"\n";//affiche 28
+echo str_word_count("bonjour tout le monde chante"),"\n";// compte les mots
+echo str_word_count("bonjour tout le monde chante sous la pluie l'ete"),"\n";//compte les mots avec les voyelles 
