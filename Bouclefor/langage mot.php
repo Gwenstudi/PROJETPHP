@@ -23,4 +23,3 @@ echo lcfirst("Contour"),"\n";//affiche contour 1ere lettre en minuscule
 $decoupe = explode(" ","bonjour tout le monde chante");"\n";//decoupe la chaine en tableau
 echo $decoupe[0],"\n";//affiche bonjour
 echo $decoupe[4],"\n";//affiche chante
-//$mot = readline("Entrez une phrase : ");
